@@ -41,7 +41,6 @@ img {
 
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 .menu {
@@ -97,7 +96,7 @@ img {
 .menu label {
     cursor: pointer;
     display: none;
-    /* icono de menu se muestra cuando la pagina se minimiza */
+    /* icono de menu se muestra cuando la pagina deja el modo escritorio(responsive) */
 }
 
 .header {
@@ -152,7 +151,7 @@ img {
     padding: 0 0 10px 0;
     display: flex;
     align-items: center;
-    
+
 }
 
 .about-img {
@@ -188,7 +187,7 @@ h2 {
 }
 
 .botones a {
-   
+
     margin-right: 15px;
 }
 
@@ -207,7 +206,7 @@ h2 {
 
 .portafolio-contenido {
     margin-top: 70px;
-    
+
 }
 
 .portafolio-1 {
@@ -215,7 +214,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
-    
+
 }
 
 .portafolio-texto {
@@ -346,8 +345,8 @@ h2 {
     color: rgb(248, 226, 226);
 }
 
-@media(max-with:210px) {
-    .menu{
+@media (max-with:991px) {
+    .menu {
         padding: 20px;
     }
 
@@ -355,7 +354,7 @@ h2 {
         display: initial;
     }
 
-  .menu .navbar{
+    .menu .navbar {
 
         position: absolute;
         top: 100%;
@@ -363,7 +362,7 @@ h2 {
         right: 0;
         background-color: aqua;
         display: none;
-      
+
     }
 
     .menu .navbar ul li a:hover {
@@ -374,7 +373,7 @@ h2 {
         width: 100%;
     }
 
-    #menu:checked ~ .navbar{
+    #menu:checked~.navbar {
         display: initial;
     }
 
