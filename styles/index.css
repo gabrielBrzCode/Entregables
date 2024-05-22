@@ -18,7 +18,7 @@
 }
 
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -344,39 +344,96 @@ h2 {
 .social-link a:hover {
     color: rgb(248, 226, 226);
 }
-
-@media (max-with:991px) {
+@media (max-width:391px) {
     .menu {
         padding: 20px;
     }
-
-    .menu label {
+    .menu label{
         display: initial;
     }
-
-    .menu .navbar {
-
+    .menu .navbar{
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
-        background-color: aqua;
+        background: linear-gradient(90deg,
+        rgba(78, 159, 215, 1) 0%,
+        rgba(74, 42, 193, 1) 100%);
         display: none;
-
-    }
-
-    .menu .navbar ul li a:hover {
-        color: #101630;
-    }
-
-    .menu .navbar ul li {
-        width: 100%;
-    }
-
-    #menu:checked~.navbar {
-        display: initial;
-    }
-
-
+}
+.menu .navbar ul li a:hover {
+color: #101630;
+}
+.menu .navbar ul li {
+    width: 100%;
+}
+#menu:checked ~ .navbar{
+    display:initial
+}
+.header {
+    min-height: 0vh;
+    padding: 100px 30px 30px 30px;
+}
+.header-contenido{
+    flex-direction: column;
+    text-align: center;
+}
+.header-texto h1{
+    font-size: 70px;
+}
+.about {
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+}
+.about-img{ text-align: center;}
+.about-img img{
+    width: 250px;
+    margin-bottom: 15px;
+}
+.botones a{
+    margin: 5px 0 10px 0;
+}
+.portafolio{
+    padding:30px ;
+}
+.portafolio-contenido{
+    margin-top: 30px;
+}
+.portafolio-texto{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.portafolio-1{
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.portafolio-img img{
+    width: 200px;
+}
+.habilidades{
+    padding:0  30px 30px 30px ;
+}
+.habilidades-contenido{
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    padding: 0 100px;
 
 }
+h2{
+font-size: 38px;
+}
+.footer{
+    padding: 60px;
+}
+.footer-contenido{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+}
+    }  
+
+    
