@@ -12,7 +12,7 @@
     --tipografia: 'Sedan SC', serif;
     --colorFondo: #031424;
     --colorClaro: #04293A;
-    --colorTexto: #ffffff;
+    --colorTexto: #badce2;
     --colorContraste: #1cbeea;
 
 }
@@ -64,8 +64,15 @@ img {
 .menu .navbar ul li {
     position: relative;
     float: left;
+    text-shadow: #00c3ff;
 
 }
+
+
+.menu .navbar ul li a span {
+    color: rgb(237, 192, 32)
+}
+
 
 .menu .navbar ul li a {
 
@@ -120,11 +127,11 @@ img {
 }
 
 .header-texto span {
-    
+
     font-size: 40px;
     font-weight: 600;
     color: #868b9e;
-   
+
 
 }
 
@@ -151,33 +158,64 @@ img {
 
 
 .header-contenido .boton-cv {
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 
 
 
 .btn {
-    border-radius: 5%;
+    border-radius: 10%;
     text-transform: uppercase;
     position: relative;
-    margin-right: 70px;
-    padding: 12px 35px;
+    margin-right: 20px;
+    padding: 12px 5px;
     text-decoration: none;
     color: white;
-    letter-spacing: 10px;
-    transition: all 0.6s ease;
+    letter-spacing: 5px;
+    transition: all 2s ease;
 }
-.boton-cv{
+
+/* .imagenes-botones{
+    border: solid yellow;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+
+
+.boton-cv img {
+    width: 50px;
+    height: 50px;
+
+    
+}
+.imgimgimg{
+    background-color: #e4fcff;
+    border: solid 5px rgb(255, 255, 255);
+}
+.imgimgimg2{
+    border: solid 5px rgb(255, 255, 255);;
+}
+
+.boton-cv {
+
+    width: 35%;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+    align-items: center;
+    
+    
+    margin-left: 100px;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 15px;
-    gap: 50px;
-   
     
-   
-    
-    align-items: center;
+
 }
 
 
@@ -228,59 +266,64 @@ img {
     transform: rotate(90deg);
 }
 
-.btn-3{
+.btn-3 {
     border: solid 3px var(--colorContraste);
-   
-}
-.btn-3::after{
-content: "";
-position: absolute;
-width: 100%;
-height: 100%;
-left: 0;
-top: 0;
-background-color: var(--colorContraste);
-z-index: -2;
-
-
 
 }
-.btn-3::before{
-content: "";
-position: absolute;
 
-width: 100%;
-height: 220px;
-left: 0%;
-bottom: -80%;
-border-radius: 100%;
-background-color:var(--colorFondo);
-z-index: -1;
+.btn-3::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--colorContraste);
+    z-index: -2;
 
-
-}
-.btn-3:hover::before{
-animation: btn-3 2s linear both;
-animation-duration: 3s;
-/* cuantas veces queremos que se repita la animación */
-animation-iteration-count: infinite;
-/* forma en que queremos que se de el movimiento */
-animation-timing-function: ease-in-out;
-/* dirección de mi animación */
-animation-direction: alternate;
-}
-
-@keyframes btn-3{
-0%{ transform: rotate(0deg);
 
 
 }
 
+.btn-3::before {
+    content: "";
+    position: absolute;
 
-100%{
-    transform: rotate(360deg);
+    width: 100%;
+    height: 220px;
+    left: 0%;
+    bottom: -80%;
+    border-radius: 100%;
+    background-color: var(--colorFondo);
+    z-index: -1;
+
+
 }
+
+.btn-3:hover::before {
+    animation: btn-3 2s linear both;
+    animation-duration: 3s;
+    /* cuantas veces queremos que se repita la animación */
+    animation-iteration-count: infinite;
+    /* forma en que queremos que se de el movimiento */
+    animation-timing-function: ease-in-out;
+    /* dirección de mi animación */
+    animation-direction: alternate;
 }
+
+@keyframes btn-3 {
+    0% {
+        transform: rotate(0deg);
+
+
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .about {
 
     padding: 0 0 10px 0;
@@ -540,75 +583,76 @@ h2 {
         justify-content: center;
         align-items: center;
         margin: 20px auto;
-        font-size:8px
+        font-size: 8px
     }
-    }
-    .about {
-        padding: 30px;
-        flex-direction: column;
-        text-align: center;
-    }
+}
 
-    .about-img {
-        text-align: center;
-    }
+.about {
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+}
 
-    .about-img img {
-        width: 250px;
-        margin-bottom: 15px;
-    }
+.about-img {
+    text-align: center;
+}
 
-    .botones a {
-        margin: 5px 0 10px 0;
-    }
+.about-img img {
+    width: 250px;
+    margin-bottom: 15px;
+}
 
-    .portafolio {
-        padding: 30px;
-    }
+.botones a {
+    margin: 5px 0 10px 0;
+}
 
-    .portafolio-contenido {
-        margin-top: 30px;
-    }
+.portafolio {
+    padding: 30px;
+}
 
-    .portafolio-texto {
-        text-align: center;
-        margin-bottom: 30px;
-    }
+.portafolio-contenido {
+    margin-top: 30px;
+}
 
-    .portafolio-1 {
-        flex-direction: column;
-        margin-bottom: 30px;
-    }
+.portafolio-texto {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-    .portafolio-img img {
-        width: 200px;
-    }
+.portafolio-1 {
+    flex-direction: column;
+    margin-bottom: 30px;
+}
 
-    .habilidades {
-        padding: 0 30px 30px 30px;
-    }
+.portafolio-img img {
+    width: 200px;
+}
 
-    .habilidades-contenido {
-        margin-top: 0;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-        padding: 0 100px;
+.habilidades {
+    padding: 0 30px 30px 30px;
+}
 
-    }
+.habilidades-contenido {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 0 100px;
 
-    h2 {
-        font-size: 38px;
-    }
+}
 
-    .footer {
-        padding: 60px;
-    }
+h2 {
+    font-size: 38px;
+}
 
-    .footer-contenido {
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        gap: 50px;
-    }
+.footer {
+    padding: 60px;
+}
+
+.footer-contenido {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+}
 }
