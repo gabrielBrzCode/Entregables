@@ -1,4 +1,4 @@
-# TITULO DEL DOCUMENTO: Portafolio de Gabriel Betancourt#
-# Aqui encontraras mi informacion personal mas importante y los metodos para contactarme#
+# TITULO DEL DOCUMENTO: Portfolio de Gabriel Betancourt.#
+# Description Here you will find my most important personal information and methods to contact me.#
 
-# AUTOR: Gabriel Betancourt Rodriguez#
+# AUTOR: Gabriel Betancourt Rodriguez.#

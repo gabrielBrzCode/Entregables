@@ -407,7 +407,7 @@ img {
 .about-img img {
     width: 300px;
     border-radius: 100%;
-    border: 10px solid rgb(141, 138, 169);
+    border: 10px solid rgb(255, 255, 255);
 
 }
 
@@ -427,7 +427,7 @@ h2 {
 }
 
 .about-texto p {
-    color: #868b9e;
+    color: #ffffff;
     font-size: 17px;
     margin-bottom: 50px;
 }
@@ -563,7 +563,7 @@ h2 {
 }
 
 .habilidades-contenido img {
-    width: 70px;
+    width: 40px;
 
 }
 
@@ -572,7 +572,7 @@ h2 {
 /* DISEÑO RESPONSIVE 390PX*/
 /* DISEÑO RESPONSIVE 390PX*/
 
-@media (max-width:391px) {
+@media (max-width:490px) {
     body {
         overflow-x: hidden;
     }
@@ -608,50 +608,49 @@ h2 {
     }
 
     .menu .navbar ul li a:hover {
+
         color: #101630;
     }
 
     .menu .navbar ul li {
         width: 100%;
+
     }
 
     #menu:checked~.navbar {
         display: initial
     }
 
-    .contenedor-boton1,
-    .contenedor-boton2 {
-        display: flex;
-        gap: 15px;
-        flex-direction: column;
-        margin: 0 auto;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        margin-top: -100px;
-    }
-
-    .contenedor-boton1 a,
-    .contenedor-boton2 a {
-        width: 100%;
-    }
+   
+    
+.contenedor{
+    width: 100%;
+   
+    
+}
 
     /* AQUI FINALIZA EL RESPONSIVE DEL MENU NAVEGADOR */
     /* AQUI FINALIZA EL RESPONSIVE DEL MENU NAVEGADOR */
     /* AQUI FINALIZA EL RESPONSIVE DEL MENU NAVEGADOR */
 
     .header {
-        min-height: 0vh;
-        padding: 100px 30px 30px 30px;
+        width: 100%;
+      
+        margin: 0 auto;
+        font-size: 8px
     }
+
 
     .header-contenido {
         flex-direction: column;
         text-align: center;
+         gap: 0;
     }
 
     .header-texto h1 {
-        font-size: 50px;
+        font-size: 40px;
+        width: 50%;
+        margin: 0 auto;
 
     }
 
@@ -659,7 +658,7 @@ h2 {
 
     .header-texto .escribiendo {
         display: block;
-
+        margin: 0 auto;
         white-space: nowrap;
         width: 9ch;
         font-size: 30px;
@@ -679,15 +678,20 @@ h2 {
 
     .boton-cv {
         width: 100%;
-        height: 20vh;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        
-        width: 100%;
-        font-size: 5px;
-        margin: 0 auto;
+     display: flex;
+     flex: 1;
+     flex-direction: row;
+     margin:0 auto;
+   
 
     }
+    .contenedor-boton1,
+    .contenedor-boton2{
+   padding: 0;
+ 
+   
+    }
+  
 
     /* AQUI FINALIZA EL HEADER Y SUS BOTONES */
     /* AQUI FINALIZA EL HEADER Y SUS BOTONES */
@@ -699,7 +703,7 @@ h2 {
 
     .about-img {
         text-align: center;
-        margin-top: -70px;
+        margin-top: 70px;
     }
 
     .about-texto h2 {
@@ -717,7 +721,7 @@ h2 {
     }
 
     .portafolio {
-        padding: 30px;
+       padding: 0;
     }
 
     .portafolio-contenido {
@@ -746,10 +750,6 @@ h2 {
 
     }
 
-
-
-
-
     .portafolio-texto {
         text-align: center;
         margin-bottom: 30px;
@@ -757,7 +757,7 @@ h2 {
 
     .portafolio-1 {
         flex-direction: column;
-        margin-bottom: 30px;
+       
     }
 
     .portafolio-img img {
@@ -778,56 +778,102 @@ h2 {
     }
 
     .habilidades h2 {
-        font-size: 18px;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+    .habilidades-contenido img {
+        width: 40px;
     }
 
-    .habilidades-contenido img {
-
-        width: 50%;
+    .caja-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100px;
         margin: 0 auto;
     }
+
 
 }
 
 /* AQUI FINALIZA LA SECCION MAIN Y SKILLS. Footer ya es responsivo */
-
-
-
 @media (max-width:1024px) {
+    body {
+        overflow-x: hidden;
+    }
 
-    .contenedor {
-        width: 800px;
-
+    .menu {
+        padding: 20px;
     }
 
     .header-contenido {
-        margin: 0 70px 0 70px;
+        display: flex;
 
+        flex: 1;
+        margin: -50px 50px 0 50px;
+        
     }
 
+    .btn {
+        width: 35%;
+        display: flex;
 
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 8px
+    }
 
     .boton-cv {
-
-        width: 100%;
+    margin: 80px 10px 0 10px;
+        width: 20%;
         height: 10vh;
-        display: grid;
-        justify-content: center;
-        font-size: 5px;
-        gap: -50px;
-
+        gap: 10px;
+        
+    
     }
 
     .portafolio {
         margin-top: 100px;
         text-align: center;
-
-
     }
 
     .portafolio-contenido {
         margin-top: 70px;
-
     }
+    .about{
+        margin-top: -80px;
+        padding: 80px;
+    }
+    
+    .contenedor-boton1 a,
+    .contenedor-boton2 a {
+        width: 100%;
+       
 }
-/* Gracias por visitar mi codigo */
+.contenedor-boton1,
+    .contenedor-boton2 {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .habilidades-contenido{
+        padding: 50px;
+    }
+    
+    .habilidades-contenido img {
+
+        width: 60px;
+        margin: 0 auto;
+    }
+    .caja-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
